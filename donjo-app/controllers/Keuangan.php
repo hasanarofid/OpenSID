@@ -41,7 +41,6 @@ class Keuangan extends CI_Controller {
 
   public function proses_impor()
   {
-    print_r($_FILES['keuangan']['tmp_name']);die();
     $this->keuangan_model->impor($_FILES['keuangan']['tmp_name']);
 
     redirect('keuangan/import_data');
